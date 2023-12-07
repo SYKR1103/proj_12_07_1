@@ -14,7 +14,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
             type : 'postgres',
             host : cfg.get('POSTGRES_HOST'),
             port : cfg.get('POSTGRES_PORT'),
-            user : cfg.get('POSTGRES_USERNAME'),
+            username : cfg.get('POSTGRES_USER'),
             password : cfg.get('POSTGRES_PASSWORD'),
             database : cfg.get('POSTGRES_DB'),
             entities : [ __dirname + "/../**/*.entity{.ts,.js}"],
